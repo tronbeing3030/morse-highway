@@ -1,0 +1,125 @@
+html{
+    /* background-image: url("https://images.unsplash.com/photo-1543096757-a42d5d384910?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat; */
+    /* background-size: 100em; */
+    background-color: #000814;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-image: url("Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #08060090;
+    box-shadow: 0 4px 30px rgba(49, 41, 0, 0.444);
+    backdrop-filter: blur(.2em);
+    -webkit-backdrop-filter: blur(.2em);
+    filter: hue-rotate(0deg);
+    width: 30em;
+    border-radius: .8em;
+    font-size: 1.2rem;
+    padding: 1.5em 0 2.5em 0;
+}
+
+h1{
+    margin: 0;
+    color: #ffec58;
+    text-align: center;
+}
+
+.input-text{
+    display: flex;
+    margin: 1em 0;
+}
+
+textarea{
+    height: 30px;
+    background-color: #faf99d;
+    color: #080600;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: none;
+    padding: 1em;
+    border-radius: 1em;
+    width: 30em;
+}
+
+textarea::placeholder{
+    color: #3a3a00;
+}
+
+.input-text textarea{
+    border-radius: 1em 0 0 1em;
+    width: 18em;
+    transition: all .15s ease-in-out;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    text-align: center;
+    padding: 0 2.1em ;
+    background-color: #faf99d;
+    color: #080600;
+    font-weight: 800;
+    font-size: 1.1rem;
+    transition: all .15s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #faf99d;
+    background-color: #201802;
+}
+
+@media (max-width: 600px) {
+    form{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    textarea{
+        width: 45%;
+    }
+
+    .input-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+    }
+
+    .input-text textarea{
+        border-radius: 1em;
+        width: 60%;
+    }
+
+    button{
+        border-radius: 1em;   
+        padding: .2em 2.5em;
+        margin-top: 1em;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
